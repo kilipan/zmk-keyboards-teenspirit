@@ -1,0 +1,9 @@
+file_format: "1"
+id: teenspirit
+name: teenspirit
+type: shield
+url: https://github.com/kilipan/teenspirit
+requires: 
+  - seeeduino_xiao_rp2040
+features:
+  - keys
