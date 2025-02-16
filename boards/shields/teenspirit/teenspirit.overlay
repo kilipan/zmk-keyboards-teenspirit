@@ -1,10 +1,13 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "teenspirit-layout.dtsi"
 
+&teenspirit_layout {
+    transform = &default_transform;
+};
+
 / {
     chosen {
         zmk,kscan = &default_kscan;
-        zmk,physcal-layout = &physical_layout0;
     };
 
     default_kscan: kscan {
@@ -17,15 +20,14 @@
             , <&xiao_d  3 GPIO_ACTIVE_HIGH> // COL1
             , <&xiao_d 10 GPIO_ACTIVE_HIGH> // COL2
             , <&xiao_d  9 GPIO_ACTIVE_HIGH> // COL3
-        ;
+            ;
         row-gpios
             = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW0
             , <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW1
             , <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW2
             , <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3
             , <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW4
-        ;
-            
+            ;
     };
 
     default_transform: matrix_transform {
@@ -39,8 +41,4 @@
                             RC(3,0) RC(3,1) RC(3,2) RC(3,3)
         >;
     };
-};
-
-&physical_layout0 {
-    transform = &default_transform;
 };

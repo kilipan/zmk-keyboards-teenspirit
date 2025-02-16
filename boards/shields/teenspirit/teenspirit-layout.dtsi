@@ -1,8 +1,8 @@
 #include <physical_layouts.dtsi>
 
 / {
-	physical_layout0: physical_layout_0 {
+	teenspirit_layout: teenspirit_layout {
 		compatible = "zmk,physical-layout";
-		display-name = "Default Layout";
+		display-name = "Default";
 	};
 };
