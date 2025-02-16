@@ -51,14 +51,14 @@ combo_##NAME { \
     key-positions = <KEYPOS>; \
 };
 
-#define COMBOS_TOP_ROW(LTPR, LTRM, LTMI, MTII, RTIM, RTMR, RTRP) \
+#define COMBOS_TOP_ROW(LTPR, LTRM, LTMI,  RTIM, RTMR, RTRP) \
 	SLOWCOMBO(_ltpr, LTPR, 0 1) \
 	COMBO(_ltrm, LTRM, 1 2) \
 	COMBO(_ltmi, LTMI, 2 3) \
 	COMBO(_rtim, RTIM, 4 5) \
 	COMBO(_rtmr, RTMR, 5 6) \
 	SLOWCOMBO(_rtrp, RTRP, 6 7)
-#define COMBOS_BOT_ROW(LBRM, LBMI, MBII, RBIM, RBMR) \
+#define COMBOS_BOT_ROW(LBRM, LBMI,  RBIM, RBMR) \
 	COMBO(_lbrm, LBRM, 8 9) \
 	COMBO(_lbmi, LBMI, 9 10) \
 	COMBO(_rbim, RBIM, 11 12) \
