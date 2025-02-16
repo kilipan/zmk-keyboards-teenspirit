@@ -3,6 +3,7 @@
 / {
 	teenspirit_layout: teenspirit_layout {
 		compatible = "zmk,physical-layout";
-		display-name = "Default";
+		display-name = "Teenspirit";
+		transform = <&default_transform>;
 	};
 };

@@ -1,13 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "teenspirit-layout.dtsi"
-
-&teenspirit_layout {
-    transform = &default_transform;
-};
+#include "teenspirit-layouts.dtsi"
 
 / {
     chosen {
         zmk,kscan = &default_kscan;
+        zmk,kscan = &teenspirit_layout;
     };
 
     default_kscan: kscan {
