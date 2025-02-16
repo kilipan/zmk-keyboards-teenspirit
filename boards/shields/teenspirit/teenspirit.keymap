@@ -78,7 +78,7 @@ combo_##NAME { \
 
 /* usually on base layer */
         COMBO(q, &kp Q, 8 10)
-        COMBO(k, &kp K, 12 10)
+        COMBO(k, &kp K, 2 10)
         COMBO(j, &kp J, 5 11)
         COMBO(shiftablesch, &macro_shiftable_sch, 1 3)
         COMBO(enter, &kp ENTER, 11 13)
