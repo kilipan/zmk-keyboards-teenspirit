@@ -15,7 +15,6 @@
 / {
     macros {
         macro_shiftable_sch: macro_shiftable_sch {
-            label = "Macro_shiftable_sch";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <
@@ -118,7 +117,6 @@ combo_##NAME { \
     behaviors {
         hl: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods left";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <150>;
@@ -129,7 +127,6 @@ combo_##NAME { \
         };
         hr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods right";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <150>;
@@ -141,7 +138,6 @@ combo_##NAME { \
 
         my_lt: my_layer_taps {
             compatible = "zmk,behavior-hold-tap";
-            label = "my layer taps";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <160>;
@@ -150,14 +146,12 @@ combo_##NAME { \
         };
         dotcol: dot_colon {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOT_COL";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         comsem: comma_semicolon {
             compatible = "zmk,behavior-mod-morph";
-            label = "COM_SEM";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -171,8 +165,6 @@ combo_##NAME { \
         compatible = "zmk,keymap";
 
         aptmak {
-            label = "APT";
-
             bindings = <
                 &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H        &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
                                &kp C          &kp G          &kp D              &kp L          &kp U          &kp Y
@@ -180,8 +172,6 @@ combo_##NAME { \
             >;
         };
         numbers {
-            label = "NUM";
-
             bindings = <
                 &hl LCTRL PLUS &hl LALT MINUS &hl LGUI STAR  &hl LSHFT SLASH    &kp N4         &kp N5         &kp N6         &dotcol
                                &kp N9         &kp N8         &kp N7             &kp N1         &kp N2         &kp N3
@@ -189,8 +179,6 @@ combo_##NAME { \
             >;
         };
         navigation {
-            label = "NAV";
-
             bindings = <
                 &sk LCTRL      &sk LALT       &sk LGUI       &sk LSHFT          &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT
                                &kp C_AC_COPY  &kp C_AC_CUT   &kp C_AC_PASTE     &kp HOME       &kp C_MUTE     &kp END
@@ -198,8 +186,6 @@ combo_##NAME { \
             >;
         };
         symbols {
-            label = "SYM";
-
             bindings = <
                 &kp EXCL       &kp AT         &kp HASH       &kp DOLLAR         &kp AMPERSAND  &kp ASTERISK   &kp PERCENT    &kp CARET
                                &kp GRAVE      &kp DQT        &kp UNDERSCORE     &kp BACKSLASH  &kp PIPE       &kp EQUAL
@@ -207,8 +193,6 @@ combo_##NAME { \
             >;
         };
         function {
-            label = "FUN";
-
             bindings = <
                 &bootloader    &kp F12        &kp F11        &kp F10            &kp F4         &kp F5         &kp F6         &none
                                &kp F9         &kp F8         &kp F7             &kp F1         &kp F2         &kp F3

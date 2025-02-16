@@ -4,7 +4,7 @@
 / {
     chosen {
         zmk,kscan = &default_kscan;
-        zmk,kscan = &teenspirit_layout;
+        zmk,physical-layout = &teenspirit_layout;
     };
 
     default_kscan: kscan {
